@@ -211,6 +211,11 @@ ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item {
     overflow: visible;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.phpdebugbar-widgets-list li.phpdebugbar-widgets-list-item > .phpdebugbar-widgets-value{
+    flex-grow: 1;
 }
 
 .phpdebugbar-widgets-sql.phpdebugbar-widgets-name {
@@ -316,4 +321,12 @@ ul.phpdebugbar-widgets-cache a.phpdebugbar-widgets-forget {
     color: #fff;
     text-decoration: none;
     line-height: 1.5rem;
+}
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item span.phpdebugbar-widgets-collector,
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item span.phpdebugbar-widgets-label{
+    float: none;
+    order: 10;
+}
+div.phpdebugbar-widgets-messages li.phpdebugbar-widgets-list-item pre.sf-dump{
+    display: block;
 }
